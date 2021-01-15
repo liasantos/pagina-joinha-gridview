@@ -1,0 +1,228 @@
+/*css reset*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+/*layout*/
+
+body {
+  display: grid; /*torna o body uma grid container*/
+  grid-template-areas: /*especifica a área dentro da grid*/
+    "header header header" /* primeira linha é composta pelo cabeçalho*/
+    "main main aside" /*segunda linha é composta pelo main na esquerda e o aside na direita*/
+    "main main aside2" /*terceira linha é composta pelo main na esquerda e o aside2 na direita*/
+    "footer footer footer"; /*quarta linha é composta pelo rodapé*/
+  /* área em três colunas: o main é duas vezes maior que o aside, por isso é repetido duas vezes*/
+
+  grid-gap: 20px; /*espaço entre os elementos da grid*/
+  grid-template-columns: auto auto 25%; /*tamanho de cada coluna*/
+  grid-template-rows: auto auto auto auto; /*tamanho de cada linha*/
+}
+
+.grid-header {
+  grid-area: header; /*especifica a lacuna que o elemento header pertence*/
+  position: sticky; /*precisa???????*/ /* sim */
+  top: 0; /*gruda no topo*/
+  background-color: #e0becc;
+}
+
+.grid-aside {
+  grid-area: aside; /*especifica a lacuna que o elemento aside pertence*/
+  background-color: rgba(255, 199, 209, 0.479);
+  border-radius: 5px;
+  overflow: auto;
+  margin-right: 20px;
+}
+
+.grid-aside2 {
+  grid-area: aside2; /*especifica a lacuna que o elemento main pertence*/
+  background-color: rgba(255, 199, 209, 0.479);
+  border-radius: 5px;
+  overflow: auto;
+  margin-right: 20px;
+}
+
+.grid-main {
+  grid-area: main; /*especifica a lacuna que o elemento main pertence*/
+  margin-left: 20px;
+  background-color: rgba(255, 199, 209, 0.185);
+}
+
+.grid-footer {
+  grid-area: footer; /*especifica a lacuna que o elemento footer pertence*/
+  background-color: #e0becc;
+  margin-bottom: 5px;
+  text-align: center;
+  line-height: 3;
+  font-size: 15px;
+  color: black;
+  text-shadow: 2px 2px 5px rgb(128, 0, 21);
+  border: solid 1px rgb(128, 0, 21);
+  border-radius: 7px;
+}
+
+/*testetestetestetestetestetestetestetestetestetesteteste*/
+/*.grid-header,
+.grid-aside,
+.grid-aside2,
+.grid-main,
+.grid-footer {
+  background-color: rgba(0, 0, 0, 0.315);
+} /*testetestetestetestetestetestetestetestetestetesteteste*/
+
+/*background*/
+
+body {
+  background-image: url(../img/bg.jpg);
+  background-repeat: repeat;
+}
+
+/*header*/
+
+h1 {
+  /*título da página*/
+  font-weight: bolder;
+  color: black;
+  text-shadow: 1px 1px 3px rgb(128, 0, 21);
+  font-family: tahoma;
+  line-height: 3;
+  font-size: 200%;
+  text-align: center;
+}
+
+nav {
+  /*menu de navegação*/
+  display: flex;
+  justify-content: space-around; /*espaço antes, depois e entre os elementos do flex*/
+  padding: 15px; /*espaço interno*/
+  background-color: black;
+  border-radius: 7px;
+}
+
+.active-menu {
+  /*barrinha embaixo do menu ativo*/
+  font-weight: bold;
+  border-bottom: rgb(252, 164, 178) solid 1px;
+}
+
+a {
+  /*estilizando os links do menu*/
+  color: rgb(252, 164, 178);
+  font-size: 110%;
+  font-weight: bold;
+  text-align: center;
+}
+
+a:hover {
+  /*hover do menu*/
+  background-color: rgb(151, 3, 27);
+  border-radius: 5px;
+}
+
+/* Textos */
+
+h2 {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  padding: 2px;
+  line-height: 2;
+  color: black;
+  text-shadow: 1px 1px 2px rgba(128, 0, 21, 0.39);
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: justify;
+  line-height: 1;
+  color: rgb(128, 0, 21);
+}
+
+p {
+  font-size: 18px;
+  font-family: tahoma;
+  color: black;
+}
+
+ul {
+  /*reseta a decoração da lista*/
+  list-style: none;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+/*aside*/
+
+.h2-aside {
+  /*título dos asides*/
+  font-size: 22px;
+}
+
+.a-aside:hover {
+  background-color: transparent; /*para não ficar com o mesmo hover do menu*/
+  opacity: 0.7; /*efeito de transparência quando passa o mouse nas imagens*/
+}
+
+.p-fav {
+  font-size: 17px;
+  line-height: 1;
+  margin: 15px;
+  text-align: left;
+}
+
+.heart {
+  color: rgb(151, 3, 27);
+  text-shadow: black 1px 1px 2px;
+}
+
+.del {
+  text-decoration: line-through; /*efeito riscado magickando*/
+}
+
+.favoritos-img {
+  margin-left: 20px; /*desgruda da borda*/
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+}
+
+.container-fav {
+  display: flex; /*elementos inline*/
+  align-items: center; /*centralizadinhos*/
+}
+
+.img-aside2 {
+  /*linkedin*/
+  border-radius: 0; /*tira o border-radius padrão*/
+  border: none;
+  height: 50px;
+  width: auto;
+  display: block; /*para centralizar*/
+  margin: auto; /*para centralizar*/
+}
+
+.aside2 {
+  margin-top: 10px;
+  height: auto;
+}
+
+/*main*/
+
+img {
+  border-radius: 25px; /*padrão de imagens arredondadas*/
+  border: rgb(128, 0, 21) 1px solid;
+}
+
+abbr {
+  color: rgb(151, 3, 27);
+}

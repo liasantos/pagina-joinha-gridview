@@ -1,0 +1,50 @@
+* {
+  text-align: center;
+  list-style: none; /*reset da lista*/
+}
+
+.grid-aside2{ /*arruma o aside2*/
+    max-height: 45%;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.marcar-hora {
+  color: black;
+  font-size: 21px;
+  text-align: center;
+}
+.marcar-hora:hover {
+  color: rgb(151, 3, 27);
+  background-color: transparent;
+}
+
+table {
+  margin: auto;
+  margin-top: 20px;
+  border-collapse: collapse; /*corrige borda dupla*/
+  background-color: rgba(255, 199, 209, 0.404);
+}
+
+tr:hover {
+  background-color: rgba(151, 3, 28, 0.705); /*hover bacaninha nas linhas*/
+  color: #e0becc;
+}
+
+th {
+  /*estilo do cabeçalho da tabela*/
+  background-color: rgb(151, 3, 27);
+  color: rgb(255, 199, 209);
+  font-weight: bold;
+  border: solid 1px rgb(255, 199, 209);
+  padding: 15px;
+}
+
+td, /*bordinha e espaçamento bacana nas células e linhas*/
+  tr {
+  padding: 15px;
+  border: dotted 2px #e0becc;
+}

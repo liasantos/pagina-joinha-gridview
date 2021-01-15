@@ -1,0 +1,78 @@
+h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  font-family: tahoma;
+  font-size: 17px;
+  background-color: rgba(255, 199, 209, 0.404);
+  width: 100%;
+  margin-top: 30px;
+  border: transparent;
+}
+
+.inputfield {
+  display: flex;
+  flex-direction: column; /*mantém o flex em coluna*/
+  line-height: 2;
+  width: 100%;
+  align-items: center; /*centraliza os elementos do flex*/
+  font-size: 17px;
+  color: rgb(128, 0, 21);
+}
+
+.gen-title {
+  color: rgb(128, 0, 21);
+}
+
+.gender {
+  /*estiliza a input radio*/
+  display: flex;
+  width: 75%;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+input {
+  width: 75%;
+  height: 30px;
+  background-color: #f8f8f885;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  width: 75%;
+  height: 150px;
+  padding: 12px 20px;
+  /*box-sizing: border-box;*/ /*altera propriedade padrão da boxmodel - 
+    width e height será a soma do conteúdo com a borda e o padding.*/
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f885;
+  font-size: 16px;
+  resize: none; /*corrige o problema de redimensionamento livre*/
+}
+
+button {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #f8f8f885;
+  color: rgb(128, 0, 21);
+  font-weight: bold;
+  font-size: 17px;
+  border: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+button:hover {
+  /*inverte as cores no hover*/
+  background-color: rgb(128, 0, 21);
+  color: #ccc;
+}

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <!--seta a linguagem/país-->
+  <head>
+    <meta charset="UTF-8" />
+    <!--define codificação de caracteres-->
+    <title>Marcar Horário</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!--linka css-->
+    <link rel="stylesheet" href="css/marcarhorario.css" />
+    <!--linka css-->
+  </head>
+
+  <body>
+    <header class="grid-header">
+      <!--marca cabeçalho da página-->
+      <h1>Página da Lia</h1>
+      <nav>
+        <!--marca menu de navegação-->
+        <a href="index.html">Início</a>
+        <a href="sobremim.html">Sobre mim</a>
+        <a href="curriculo.html">Currículo</a>
+        <a href="citacoes.html">Citações</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="horarios.html">Horários</a>
+        <a href="marcarhorario.html"
+          ><span class="active-menu">Marcar Horário</span></a
+        >
+        <!--menu ativo-->
+      </nav>
+    </header>
+    <!-- marca o início da sidebar de favoritos-->
+    <aside class="grid-aside">
+      <!--define conteúdo aside-->
+
+      <h2 class="h2-aside">Favoritos</h2>
+      <ul>
+        <li>
+          <div class="container-fav">
+            <a
+              href="https://www.instagram.com/lojacosmique/"
+              target="_blank"
+              class="a-aside"
+            >
+              <img
+                src="img/6favoritos/cosmique.png"
+                class="favoritos-img"
+                alt="Logo da Loja Cosmique"
+              />
+            </a>
+            <p class="p-fav">
+              A loja mais fofa e colorida de Charqueadas
+              <span class="heart">♥</span>
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="container-fav">
+            <a
+              href="http://www.youtube.com/channel/UC8mDF5mWNGE-Kpfcvnn0bUg"
+              target="_blank"
+              class="a-aside"
+            >
+              <img
+                src="img/6favoritos/mepoupe.jpg"
+                class="favoritos-img"
+                alt="Logo da Me Poupe"
+              />
+            </a>
+            <p class="p-fav">Maior e melhor canal de finanças do mundo.</p>
+          </div>
+        </li>
+        <li>
+          <div class="container-fav">
+            <a
+              href="http://www.magickando.com.br"
+              target="_blank"
+              class="a-aside"
+            >
+              <img
+                src="img/6favoritos/magickando.jpg"
+                class="favoritos-img"
+                alt="Logo da Magickando"
+              />
+            </a>
+            <p class="p-fav">
+              É um podcast sobre magia <span class="del">e capirotagem</span>.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="container-fav">
+            <a
+              href="http://www.youtube.com/channel/UCE8deXi-Eea3SuEV1Q1L4ug"
+              target="_blank"
+              class="a-aside"
+            >
+              <img
+                src="img/6favoritos/super8.jpg"
+                class="favoritos-img"
+                alt="Logo do Super8"
+              />
+            </a>
+            <p class="p-fav">Melhor canal sobre cinema, filmes e séries.</p>
+          </div>
+        </li>
+        <li>
+          <div class="container-fav">
+            <a href="https://br.pinterest.com/" target="_blank" class="a-aside">
+              <img
+                src="img/6favoritos/pinterest.webp"
+                class="favoritos-img"
+                alt="Logo do Pinterest"
+              />
+            </a>
+            <p class="p-fav">
+              Rede social de compartilhamento de imagens, muito boa para se
+              inspirar e utilizar em processos criativos.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="container-fav">
+            <a
+              href="http://podprogramar.com.br"
+              target="_blank"
+              class="a-aside"
+            >
+              <img
+                src="img/6favoritos/podprogramar.jpg"
+                class="favoritos-img"
+                alt="Logo da PodProgramar"
+              />
+            </a>
+            <p class="p-fav">
+              Podcast apresentado por mulheres desenvolvedoras, focado em
+              programação, história e notícias da área de TI.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </aside>
+    <!--marca o início da sidebar de contato-->
+    <aside class="grid-aside2">
+      <h2 class="h2-aside">Contato</h2>
+      <a
+        href="https://www.linkedin.com/in/lia-santos-ds/"
+        target="_blank"
+        class="a-aside"
+      >
+        <img
+          src="img/linkedin-logo2.png"
+          class="img-aside2"
+          alt="Logo do LinkedIn"
+        />
+      </a>
+    </aside>
+
+    <main class="grid-main">
+      <!--marca o conteúdo principal-->
+      <section>
+        <h2>Marcar Horário</h2>
+        <h3>
+          Preencha o formulário para entrar em contato ou marcar um horário:
+        </h3>
+        <form
+          method="post"
+          enctype="text/plain"
+          target="blank"
+          id="horario-form"
+        >
+          <fieldset>
+            <div class="inputfield">
+              Qual é o seu nome?<input
+                name="login"
+                type="text"
+                minlength="2"
+                placeholder="Insira seu nome aqui"
+                required
+              />
+            </div>
+            <div class="inputfield">
+              Qual é o seu email?<input
+                name="email"
+                type="email"
+                minlength="6"
+                placeholder="Insira seu email aqui"
+                required
+              />
+            </div>
+            <div class="inputfield">
+              Qual o assunto da sua mensagem?<input
+                name="assunto"
+                type="text"
+                minlength="3"
+                placeholder="Insira o assunto aqui"
+                required
+              />
+            </div>
+            <div class="inputfield">
+              Qual a sua idade?<input
+                name="idade"
+                type="number"
+                minlength="2"
+                placeholder="Insira sua idade"
+                required
+              />
+            </div>
+            <div class="gender" class="inputfield">
+              <!--ver como estilizar radio -->
+              <span class="gen-title">Gênero:</span
+              ><input type="radio" name="sexo" value="Masculino" />
+              Masculino
+              <input type="radio" name="sexo" value="Feminino" /> Feminino
+              <input type="radio" name="sexo" value="Outro" /> Outro
+            </div>
+            <div class="inputfield">
+              Dia e horário: <input name="dataehora" type="datetime-local" />
+            </div>
+            <div class="inputfield">
+              Mensagem:
+              <textarea
+                name="mensagem"
+                placeholder="Insira sua mensagem aqui"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              form="horario-form"
+              value="submit"
+              id="button"
+            >
+              Enviar
+            </button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer class="grid-footer">Feito pela <strong>Lia Santos</strong>.</footer>
+    <!--define rodapé-->
+  </body>
+</html>

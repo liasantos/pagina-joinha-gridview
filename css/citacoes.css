@@ -1,0 +1,46 @@
+.grid-aside2 { /*arruma o aside2*/
+  max-height: 35%;
+}
+
+p,
+q,
+blockquote,
+cite {
+  font-size: 15px;
+  text-align: justify;
+  line-height: 2;
+}
+
+cite {
+  font-style: italic;
+  color: rgb(151, 3, 27);
+}
+
+.cite-left {
+  /*blockquote*/
+  text-align: left;
+  margin-left: 10%;
+}
+.margin-cite {
+  margin-left: 18%;
+}
+
+.citacoes-img {
+  width: 180px;
+  height: auto;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+blockquote {
+  text-align: right;
+}
+
+p,
+q,
+blockquote,
+cite,
+img {
+  margin-left: 10%;
+  margin-right: 10%;
+}

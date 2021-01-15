@@ -1,0 +1,22 @@
+.main-photo {
+  display: block; /*centraliza*/
+  margin-left: auto; /*centraliza*/
+  margin-right: auto; /*centraliza*/
+  width: 200px;
+  height: 200px;
+}
+
+p {
+ text-align: center;
+  line-height: 3;
+}
+
+.photo-container {
+  display: flex;
+  justify-content: space-evenly; /*espaço igual entre os itens*/
+}
+
+.presentation-photos {
+  width: 150px;
+  height: 150px;
+}

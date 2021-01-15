@@ -1,0 +1,29 @@
+h2 {
+    padding: 0; 
+  }
+  
+  p,
+  h3 {
+    text-align: justify;
+    margin-left: 10%;
+    /*margin-top: 20px;*/
+    margin-right: 10%;
+  }
+  
+  h3 {
+    line-height: 2;
+  }
+  
+  p {
+    padding-bottom: 5px;
+  }
+  
+  .music { /*fotos */
+    margin-left: 10%;
+    width: 150px;
+    height: auto;
+  }
+  .hobbies-img {
+    width: 150px;
+    height: auto;
+  }

@@ -1,0 +1,44 @@
+.grid-aside2{ /*arruma o aside2*/
+    max-height: 35%;
+}
+
+.ul-fav {
+  /*tira interferência de estilo padrão da página sobremim*/
+  margin-left: 0;
+  margin-top: 0;
+}
+
+ul {
+  margin-top: 10px;
+}
+
+.lia-photo {
+  width: 250px;
+  height: 250px;
+  display: block; /*centraliza*/
+  margin-left: auto; /*centraliza*/
+  margin-right: auto; /*centraliza*/
+
+}
+
+h3 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.cities-list {
+  margin-bottom: 1px;
+}
+
+h3,
+p,
+ul,
+.about-photos {
+  margin-left: 10%; /*desgruda da esquerda*/
+}
+
+.about-photos {
+  width: 110px;
+  height: 80px;
+  margin-top: 10px;
+}
